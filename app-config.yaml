@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-config
+data:
+  GREETING: Bonjour
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hello-secret
+type: Opaque
+data:
+  SQLALCHEMY_DATABASE_URI: cG9zdGdyZXNxbCtwc3ljb3BnMjovL215dXNlcjpwYXNzd2RAcG9zdGdyZXM6NTQzMi9teWFwcA==
+  POSTGRES_DB: dGVzdA==
+  POSTGRES_USER: dXNlcg==
+  POSTGRES_PASSWORD: MTIzNDU2

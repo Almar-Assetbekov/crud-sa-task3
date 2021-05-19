@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image: almar98/sa-task3
+
+service:
+  type: NodePort
+  port: 5000
+
+externalPostgresql:
+  postgresqlUsername: user
+  postgresqlPassword: 123456
+  postgresqlDatabase: test
+  postgresqlHost: "0.0.0.0"
+  postgresqlPort: "5405"
